@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F82475F11FDBE9140002A43E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F82475F01FDBE9140002A43E /* main.m */; };
+		F82475F41FDBE9140002A43E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F82475F31FDBE9140002A43E /* AppDelegate.m */; };
+		F82475F71FDBE9140002A43E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F82475F61FDBE9140002A43E /* ViewController.m */; };
+		F82475FA1FDBE9140002A43E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F82475F81FDBE9140002A43E /* Main.storyboard */; };
+		F82475FC1FDBE9140002A43E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F82475FB1FDBE9140002A43E /* Assets.xcassets */; };
+		F82475FF1FDBE9140002A43E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F82475FD1FDBE9140002A43E /* LaunchScreen.storyboard */; };
+		F824760A1FDBE9140002A43E /* AngryESP1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = F82476091FDBE9140002A43E /* AngryESP1Tests.m */; };
+		F82476151FDBE9140002A43E /* AngryESP1UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F82476141FDBE9140002A43E /* AngryESP1UITests.m */; };
+		F82476241FDBE92C0002A43E /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F82476231FDBE92C0002A43E /* OpenGLES.framework */; };
+		F82476261FDBE9350002A43E /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F82476251FDBE9350002A43E /* GLKit.framework */; };
+		F824762E1FDE22DC0002A43E /* esMatrix.c in Sources */ = {isa = PBXBuildFile; fileRef = F824762D1FDE22DC0002A43E /* esMatrix.c */; };
+		F82476301FDE23330002A43E /* esShader.m in Sources */ = {isa = PBXBuildFile; fileRef = F824762F1FDE23330002A43E /* esShader.m */; };
+		F824765D1FDE5EFE0002A43E /* shaderf.fsh in Resources */ = {isa = PBXBuildFile; fileRef = F824765C1FDE5EFE0002A43E /* shaderf.fsh */; };
+		F824765F1FDE5F0C0002A43E /* shaderv.vsh in Resources */ = {isa = PBXBuildFile; fileRef = F824765E1FDE5F0C0002A43E /* shaderv.vsh */; };
+		F82476611FDE63C90002A43E /* esView01.m in Sources */ = {isa = PBXBuildFile; fileRef = F82476601FDE63C90002A43E /* esView01.m */; };
+		F82476641FDE666C0002A43E /* esRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = F82476631FDE666C0002A43E /* esRenderer.m */; };
+		F82476671FDE66950002A43E /* esShape.m in Sources */ = {isa = PBXBuildFile; fileRef = F82476661FDE66950002A43E /* esShape.m */; };
+		F890A6891FDF6D9600BA7728 /* panda.png in Resources */ = {isa = PBXBuildFile; fileRef = F890A6881FDF6D9600BA7728 /* panda.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F82476061FDBE9140002A43E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F82475E41FDBE9140002A43E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F82475EB1FDBE9140002A43E;
+			remoteInfo = AngryESP1;
+		};
+		F82476111FDBE9140002A43E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F82475E41FDBE9140002A43E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F82475EB1FDBE9140002A43E;
+			remoteInfo = AngryESP1;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F82475EC1FDBE9140002A43E /* AngryESP1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AngryESP1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F82475F01FDBE9140002A43E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F82475F21FDBE9140002A43E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F82475F31FDBE9140002A43E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F82475F51FDBE9140002A43E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F82475F61FDBE9140002A43E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F82475F91FDBE9140002A43E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F82475FB1FDBE9140002A43E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F82475FE1FDBE9140002A43E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F82476001FDBE9140002A43E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F82476051FDBE9140002A43E /* AngryESP1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AngryESP1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F82476091FDBE9140002A43E /* AngryESP1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AngryESP1Tests.m; sourceTree = "<group>"; };
+		F824760B1FDBE9140002A43E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F82476101FDBE9140002A43E /* AngryESP1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AngryESP1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F82476141FDBE9140002A43E /* AngryESP1UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AngryESP1UITests.m; sourceTree = "<group>"; };
+		F82476161FDBE9140002A43E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F82476231FDBE92C0002A43E /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		F82476251FDBE9350002A43E /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		F824762C1FDE1FCD0002A43E /* esMatrix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = esMatrix.h; sourceTree = "<group>"; };
+		F824762D1FDE22DC0002A43E /* esMatrix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = esMatrix.c; sourceTree = "<group>"; };
+		F824762F1FDE23330002A43E /* esShader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = esShader.m; sourceTree = "<group>"; };
+		F82476311FDE23470002A43E /* esShader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = esShader.h; sourceTree = "<group>"; };
+		F824765C1FDE5EFE0002A43E /* shaderf.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shaderf.fsh; sourceTree = "<group>"; };
+		F824765E1FDE5F0C0002A43E /* shaderv.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shaderv.vsh; sourceTree = "<group>"; };
+		F82476601FDE63C90002A43E /* esView01.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = esView01.m; sourceTree = "<group>"; };
+		F82476621FDE63E20002A43E /* esView01.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = esView01.h; sourceTree = "<group>"; };
+		F82476631FDE666C0002A43E /* esRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = esRenderer.m; sourceTree = "<group>"; };
+		F82476651FDE667D0002A43E /* esRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = esRenderer.h; sourceTree = "<group>"; };
+		F82476661FDE66950002A43E /* esShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = esShape.m; sourceTree = "<group>"; };
+		F82476681FDE66A10002A43E /* esShape.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = esShape.h; sourceTree = "<group>"; };
+		F890A6881FDF6D9600BA7728 /* panda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = panda.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F82475E91FDBE9140002A43E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F82476261FDBE9350002A43E /* GLKit.framework in Frameworks */,
+				F82476241FDBE92C0002A43E /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F82476021FDBE9140002A43E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F824760D1FDBE9140002A43E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F82475E31FDBE9140002A43E = {
+			isa = PBXGroup;
+			children = (
+				F82475EE1FDBE9140002A43E /* AngryESP1 */,
+				F82476081FDBE9140002A43E /* AngryESP1Tests */,
+				F82476131FDBE9140002A43E /* AngryESP1UITests */,
+				F82475ED1FDBE9140002A43E /* Products */,
+				F82476221FDBE92C0002A43E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F82475ED1FDBE9140002A43E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F82475EC1FDBE9140002A43E /* AngryESP1.app */,
+				F82476051FDBE9140002A43E /* AngryESP1Tests.xctest */,
+				F82476101FDBE9140002A43E /* AngryESP1UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F82475EE1FDBE9140002A43E /* AngryESP1 */ = {
+			isa = PBXGroup;
+			children = (
+				F890A6881FDF6D9600BA7728 /* panda.png */,
+				F824765E1FDE5F0C0002A43E /* shaderv.vsh */,
+				F824765C1FDE5EFE0002A43E /* shaderf.fsh */,
+				F82475F21FDBE9140002A43E /* AppDelegate.h */,
+				F82475F31FDBE9140002A43E /* AppDelegate.m */,
+				F82475F51FDBE9140002A43E /* ViewController.h */,
+				F82475F61FDBE9140002A43E /* ViewController.m */,
+				F82475F81FDBE9140002A43E /* Main.storyboard */,
+				F82475FB1FDBE9140002A43E /* Assets.xcassets */,
+				F82475FD1FDBE9140002A43E /* LaunchScreen.storyboard */,
+				F82476001FDBE9140002A43E /* Info.plist */,
+				F82475EF1FDBE9140002A43E /* Supporting Files */,
+				F824762D1FDE22DC0002A43E /* esMatrix.c */,
+				F824762C1FDE1FCD0002A43E /* esMatrix.h */,
+				F824762F1FDE23330002A43E /* esShader.m */,
+				F82476311FDE23470002A43E /* esShader.h */,
+				F82476601FDE63C90002A43E /* esView01.m */,
+				F82476621FDE63E20002A43E /* esView01.h */,
+				F82476631FDE666C0002A43E /* esRenderer.m */,
+				F82476651FDE667D0002A43E /* esRenderer.h */,
+				F82476661FDE66950002A43E /* esShape.m */,
+				F82476681FDE66A10002A43E /* esShape.h */,
+			);
+			path = AngryESP1;
+			sourceTree = "<group>";
+		};
+		F82475EF1FDBE9140002A43E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F82475F01FDBE9140002A43E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F82476081FDBE9140002A43E /* AngryESP1Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F82476091FDBE9140002A43E /* AngryESP1Tests.m */,
+				F824760B1FDBE9140002A43E /* Info.plist */,
+			);
+			path = AngryESP1Tests;
+			sourceTree = "<group>";
+		};
+		F82476131FDBE9140002A43E /* AngryESP1UITests */ = {
+			isa = PBXGroup;
+			children = (
+				F82476141FDBE9140002A43E /* AngryESP1UITests.m */,
+				F82476161FDBE9140002A43E /* Info.plist */,
+			);
+			path = AngryESP1UITests;
+			sourceTree = "<group>";
+		};
+		F82476221FDBE92C0002A43E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F82476251FDBE9350002A43E /* GLKit.framework */,
+				F82476231FDBE92C0002A43E /* OpenGLES.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F82475EB1FDBE9140002A43E /* AngryESP1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F82476191FDBE9140002A43E /* Build configuration list for PBXNativeTarget "AngryESP1" */;
+			buildPhases = (
+				F82475E81FDBE9140002A43E /* Sources */,
+				F82475E91FDBE9140002A43E /* Frameworks */,
+				F82475EA1FDBE9140002A43E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AngryESP1;
+			productName = AngryESP1;
+			productReference = F82475EC1FDBE9140002A43E /* AngryESP1.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F82476041FDBE9140002A43E /* AngryESP1Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F824761C1FDBE9140002A43E /* Build configuration list for PBXNativeTarget "AngryESP1Tests" */;
+			buildPhases = (
+				F82476011FDBE9140002A43E /* Sources */,
+				F82476021FDBE9140002A43E /* Frameworks */,
+				F82476031FDBE9140002A43E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F82476071FDBE9140002A43E /* PBXTargetDependency */,
+			);
+			name = AngryESP1Tests;
+			productName = AngryESP1Tests;
+			productReference = F82476051FDBE9140002A43E /* AngryESP1Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F824760F1FDBE9140002A43E /* AngryESP1UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F824761F1FDBE9140002A43E /* Build configuration list for PBXNativeTarget "AngryESP1UITests" */;
+			buildPhases = (
+				F824760C1FDBE9140002A43E /* Sources */,
+				F824760D1FDBE9140002A43E /* Frameworks */,
+				F824760E1FDBE9140002A43E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F82476121FDBE9140002A43E /* PBXTargetDependency */,
+			);
+			name = AngryESP1UITests;
+			productName = AngryESP1UITests;
+			productReference = F82476101FDBE9140002A43E /* AngryESP1UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F82475E41FDBE9140002A43E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = AngryPanda;
+				TargetAttributes = {
+					F82475EB1FDBE9140002A43E = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					F82476041FDBE9140002A43E = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F82475EB1FDBE9140002A43E;
+					};
+					F824760F1FDBE9140002A43E = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F82475EB1FDBE9140002A43E;
+					};
+				};
+			};
+			buildConfigurationList = F82475E71FDBE9140002A43E /* Build configuration list for PBXProject "AngryESP1" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F82475E31FDBE9140002A43E;
+			productRefGroup = F82475ED1FDBE9140002A43E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F82475EB1FDBE9140002A43E /* AngryESP1 */,
+				F82476041FDBE9140002A43E /* AngryESP1Tests */,
+				F824760F1FDBE9140002A43E /* AngryESP1UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F82475EA1FDBE9140002A43E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F890A6891FDF6D9600BA7728 /* panda.png in Resources */,
+				F824765D1FDE5EFE0002A43E /* shaderf.fsh in Resources */,
+				F82475FF1FDBE9140002A43E /* LaunchScreen.storyboard in Resources */,
+				F824765F1FDE5F0C0002A43E /* shaderv.vsh in Resources */,
+				F82475FC1FDBE9140002A43E /* Assets.xcassets in Resources */,
+				F82475FA1FDBE9140002A43E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F82476031FDBE9140002A43E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F824760E1FDBE9140002A43E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F82475E81FDBE9140002A43E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F82475F71FDBE9140002A43E /* ViewController.m in Sources */,
+				F82475F41FDBE9140002A43E /* AppDelegate.m in Sources */,
+				F82476301FDE23330002A43E /* esShader.m in Sources */,
+				F82476611FDE63C90002A43E /* esView01.m in Sources */,
+				F82476671FDE66950002A43E /* esShape.m in Sources */,
+				F824762E1FDE22DC0002A43E /* esMatrix.c in Sources */,
+				F82476641FDE666C0002A43E /* esRenderer.m in Sources */,
+				F82475F11FDBE9140002A43E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F82476011FDBE9140002A43E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F824760A1FDBE9140002A43E /* AngryESP1Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F824760C1FDBE9140002A43E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F82476151FDBE9140002A43E /* AngryESP1UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F82476071FDBE9140002A43E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F82475EB1FDBE9140002A43E /* AngryESP1 */;
+			targetProxy = F82476061FDBE9140002A43E /* PBXContainerItemProxy */;
+		};
+		F82476121FDBE9140002A43E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F82475EB1FDBE9140002A43E /* AngryESP1 */;
+			targetProxy = F82476111FDBE9140002A43E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F82475F81FDBE9140002A43E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F82475F91FDBE9140002A43E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F82475FD1FDBE9140002A43E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F82475FE1FDBE9140002A43E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F82476171FDBE9140002A43E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F82476181FDBE9140002A43E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F824761A1FDBE9140002A43E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AngryESP1/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.AngryESP1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F824761B1FDBE9140002A43E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AngryESP1/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.AngryESP1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F824761D1FDBE9140002A43E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AngryESP1Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.AngryESP1Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AngryESP1.app/AngryESP1";
+			};
+			name = Debug;
+		};
+		F824761E1FDBE9140002A43E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AngryESP1Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.AngryESP1Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AngryESP1.app/AngryESP1";
+			};
+			name = Release;
+		};
+		F82476201FDBE9140002A43E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AngryESP1UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.AngryESP1UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AngryESP1;
+			};
+			name = Debug;
+		};
+		F82476211FDBE9140002A43E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AngryESP1UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.AngryESP1UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AngryESP1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F82475E71FDBE9140002A43E /* Build configuration list for PBXProject "AngryESP1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F82476171FDBE9140002A43E /* Debug */,
+				F82476181FDBE9140002A43E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F82476191FDBE9140002A43E /* Build configuration list for PBXNativeTarget "AngryESP1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F824761A1FDBE9140002A43E /* Debug */,
+				F824761B1FDBE9140002A43E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F824761C1FDBE9140002A43E /* Build configuration list for PBXNativeTarget "AngryESP1Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F824761D1FDBE9140002A43E /* Debug */,
+				F824761E1FDBE9140002A43E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F824761F1FDBE9140002A43E /* Build configuration list for PBXNativeTarget "AngryESP1UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F82476201FDBE9140002A43E /* Debug */,
+				F82476211FDBE9140002A43E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F82475E41FDBE9140002A43E /* Project object */;
+}
